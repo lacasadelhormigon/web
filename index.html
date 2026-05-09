@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Casa del Hormigón</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- HERO / SPLASH -->
+  <section class="hero" id="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="logo-wrapper">
+        <img src="https://i.postimg.cc/5ttSRQmD/logo-vallari.jpg" alt="La Casa del Hormigón" class="hero-logo" />
+      </div>
+      <p class="hero-sub">Materiales de construcción · Calidad que se sostiene</p>
+      <a href="#catalogo" class="hero-btn">
+        <span>Ver Catálogo</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- NAVBAR (aparece al hacer scroll) -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <img src="https://i.postimg.cc/5ttSRQmD/logo-vallari.jpg" alt="Logo" />
+      <span>La Casa del Hormigón</span>
+    </div>
+    <div class="nav-links">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <div class="nav-social">
+      <a href="https://www.instagram.com/lacasadelhormigon/" target="_blank" class="nav-icon ig" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://wa.me/598098125874" target="_blank" class="nav-icon wpp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://maps.app.goo.gl/fn6f3SA6zMGVYHXn8" target="_blank" class="nav-icon loc" title="Ubicación"><i class="fa-solid fa-location-dot"></i></a>
+    </div>
+  </nav>
+
+  <!-- SEPARADOR -->
+  <div class="section-divider">
+    <span class="divider-line"></span>
+    <span class="divider-icon"><i class="fa-solid fa-hammer"></i></span>
+    <span class="divider-line"></span>
+  </div>
+
+  <!-- CATÁLOGO -->
+  <section class="catalogo" id="catalogo">
+    <div class="catalogo-header">
+      <p class="catalogo-label">— Nuestros Materiales —</p>
+      <h2 class="catalogo-title">Catálogo de Productos</h2>
+      <p class="catalogo-desc">Materiales seleccionados para cada etapa de tu construcción.</p>
+    </div>
+
+
+
+    <!-- GRID DE PRODUCTOS -->
+    <div class="productos-grid" id="productosGrid">
+
+      <!-- PRODUCTO 1 -->
+      <div class="producto-card" data-category="hormigon">
+        <div class="producto-imgs">
+          <div class="imgs-track">
+            <img src="https://i.postimg.cc/fbGGDVNW/muro-imitacion-roca.jpg" alt="Producto 1 - img 1" />
+            <img src="https://i.postimg.cc/MZbCJZrj/muro-imitacion-roca-2.jpg" alt="Producto 1 - img 2" />
+            <img src="https://i.postimg.cc/pLNzQxRj/imitacion-roca-3.jpg" alt="Producto 1 - img 3" />
+            <img src="https://i.postimg.cc/QMNtcNYw/roca.jpg" alt="Producto 1 - img 4" />
+          </div>
+          <button class="img-nav prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="img-nav next"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="img-dots"></div>
+        </div>
+        <div class="producto-info">
+          <h3>Muro imitación Roca</h3>
+          <p>Altura maxima 2.40 m</p>
+          <p>Largo : el q se necesite</p>
+          <a href="https://wa.me/598098125874?text=Hola, me interesa el muro imitación roca" target="_blank" class="consultar-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar precio
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 2 -->
+      <div class="producto-card" data-category="hormigon">
+        <div class="producto-imgs">
+          <div class="imgs-track">
+            <img src="https://i.postimg.cc/ZYGcTX0c/Tapas-para-saneamiento.jpg" alt="Producto 2" />
+            <img src="https://i.postimg.cc/mgM3KkmW/tapa-de-saneamiento.jpg" alt="Producto 2" />
+          </div>
+          <button class="img-nav prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="img-nav next"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="img-dots"></div>
+        </div>
+        <div class="producto-info">
+          <h3>Tapas para Saneamiento</h3>
+          <p>Tamaño: 20×20, 40×40, 60×60, 60×60 integral</p>
+          <a href="https://wa.me/598098125874?text=Hola, me interesa las Tapa para Saneamiento" target="_blank" class="consultar-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar precio
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 3 -->
+      <div class="producto-card" data-category="estructura">
+        <div class="producto-imgs">
+          <div class="imgs-track">
+            <img src="https://i.postimg.cc/0ydMpwV3/baldoson.jpg" alt="Producto 3" />
+          </div>
+          <button class="img-nav prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="img-nav next"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="img-dots"></div>
+        </div>
+        <div class="producto-info">
+          <h3>Baldoson</h3>
+          <p>Tamaño: 60x60</p>
+          <a href="https://wa.me/598098125874?text=Hola, me interesa el Baldoson" target="_blank" class="consultar-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar precio
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 4 -->
+      <div class="producto-card" data-category="revestimiento">
+        <div class="producto-imgs">
+          <div class="imgs-track">
+            <img src="https://i.postimg.cc/8PT7BbYQ/muro-prefabricado-liso.jpg" alt="Producto 4" />
+            <img src="https://i.postimg.cc/gJPzczFp/muro-liso-2.jpg" alt="Producto 4 - img 2" />
+            <img src="https://i.postimg.cc/Dyz2wpDd/muro-liso-3.jpg" alt="Producto 4 - img 3" />
+            <img src="https://i.postimg.cc/QMSDDpbg/muro-prefabricado-liso-liso-3.jpg" alt="Producto 4 - img 3" />
+          </div>
+          <button class="img-nav prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="img-nav next"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="img-dots"></div>
+        </div>
+        <div class="producto-info">
+          <h3>Muro Prefabricado Liso</h3>
+          <p>Altura maxima 2.40 m</p>
+          <p>Largo : el q se necesite</p>
+          <a href="https://wa.me/598098125874?text=Hola, me interesa el Muro Prefabricado Liso " target="_blank" class="consultar-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar precio
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 5 -->
+      <div class="producto-card" data-category="acabado">
+        <div class="producto-imgs">
+          <div class="imgs-track">
+            <img src="https://i.postimg.cc/CKMycRgd/Casa-Prefabricada.jpg" alt="Producto 5" />
+            <img src="https://i.postimg.cc/PxLR7ZFP/casas-prefabricadas-2.jpg" alt="Producto 5 - img 2" />
+            <img src="https://i.postimg.cc/sf7nZVFD/casa-prefabricada-3.jpg" alt="Producto 5 - img 3" />
+          </div>
+          <button class="img-nav prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="img-nav next"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="img-dots"></div>
+        </div>
+        <div class="producto-info">
+          <h3>Casas Prefabricadas</h3>
+          <p>Casas Prefabricadas.</p>
+          <a href="https://wa.me/598098125874?text=Hola, me interesa La casa Prefabricada" target="_blank" class="consultar-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar precio
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 6 -->
+      <div class="producto-card" data-category="estructura">
+        <div class="producto-imgs">
+          <div class="imgs-track">
+            <img src="https://i.postimg.cc/DwMQMDVY/cubo-de-luz-o-agua.jpg" alt="Producto 6" />
+          </div>
+          <button class="img-nav prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="img-nav next"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="img-dots"></div>
+        </div>
+        <div class="producto-info">
+          <h3>Cubo de 40×40</h3>
+          <p>Registro de luz o agua.</p>
+          <a href="https://wa.me/598098125874?text=Hola, me interesa el Cubo de 40x40" target="_blank" class="consultar-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar precio
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 7 -->
+      <div class="producto-card" data-category="revestimiento">
+        <div class="producto-imgs">
+          <div class="imgs-track">
+            <img src="https://i.postimg.cc/pLh5pL7m/caminero.jpg" alt="Producto 7" />
+            <img src="https://i.postimg.cc/x81cYfMg/caminero-2.jpg" alt="Producto 7 - img 2" />
+            <img src="https://i.postimg.cc/FKXzzg0R/caminero-3.jpg" alt="Producto 7 - img 3" />
+          </div>
+          <button class="img-nav prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="img-nav next"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="img-dots"></div>
+        </div>
+        <div class="producto-info">
+          <h3>Camineros grandes</h3>
+          <p>Tamaño: 1.20 x 30cm.</p>
+          <a href="https://wa.me/598098125874?text=Hola, me interesa el Caminero grande" target="_blank" class="consultar-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar precio
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 8 -->
+      <div class="producto-card" data-category="hormigon">
+        <div class="producto-imgs">
+          <div class="imgs-track">
+            <img src="https://i.postimg.cc/QNc3xG0V/imitacion-ladrillo.jpg" alt="Producto 8" />
+          </div>
+          <button class="img-nav prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="img-nav next"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="img-dots"></div>
+        </div>
+        <div class="producto-info">
+          <h3>Muro imitación ladrillo</h3>
+          <p>Altura maxima 2.40 m</p>
+          <p>Largo : el q se necesite</p>
+          <a href="https://wa.me/598098125874?text=Hola, me interesa muro imitación Ladrillo" target="_blank" class="consultar-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar precio
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 9 -->
+      <div class="producto-card" data-category="acabado">
+        <div class="producto-imgs">
+          <div class="imgs-track">
+            <img src="https://i.postimg.cc/4409Zc2C/fluviales-2.png" alt="Producto 9" />
+          </div>
+          <button class="img-nav prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="img-nav next"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="img-dots"></div>
+        </div>
+        <div class="producto-info">
+          <h3>Tapas fluviales  para desagüe</h3>
+            <p>Tapas Fluviales.</p>
+          <a href="https://wa.me/598098125874?text=Hola, me interesa las Tapas Fluviales para desagüe" target="_blank" class="consultar-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar precio
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 10 -->
+      <div class="producto-card" data-category="estructura">
+        <div class="producto-imgs">
+          <div class="imgs-track">
+            <img src="https://i.postimg.cc/GmdYSCSz/Maceta-Grande.jpg" alt="Producto 10" />
+          </div>
+          <button class="img-nav prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="img-nav next"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="img-dots"></div>
+        </div>
+        <div class="producto-info">
+          <h3>Maceta Grande</h3>
+          <p>Ideal para tus plantas.</p>
+          <a href="https://wa.me/598098125874?text=Hola, me interesa la Maceta Grande" target="_blank" class="consultar-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar precio
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 11 -->
+      <div class="producto-card" data-category="revestimiento">
+        <div class="producto-imgs">
+          <div class="imgs-track">
+            <img src="https://i.postimg.cc/6pM7jGZB/piedra-laja.jpg" alt="Producto 11" />
+          </div>
+          <button class="img-nav prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="img-nav next"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="img-dots"></div>
+        </div>
+        <div class="producto-info">
+          <h3>Muro Imitación Piedra Laja</h3>
+          <p>Altura maxima 2.40 m</p>
+          <p>Largo : el q se necesite</p>
+          <a href="https://wa.me/598098125874?text=Hola, me interesa el muro imitación piedra Laja" target="_blank" class="consultar-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar precio
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 12 -->
+      <div class="producto-card" data-category="acabado">
+        <div class="producto-imgs">
+          <div class="imgs-track">
+            <img src="https://i.postimg.cc/nzGf2qsj/cogobos-parte-1.png" alt="Producto 12" />
+            <img src="https://i.postimg.cc/vTPFFMtG/cogobos-parte-2.png" alt="Producto 12 - img 2" />
+          </div>
+          <button class="img-nav prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="img-nav next"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="img-dots"></div>
+        </div>
+        <div class="producto-info">
+          <h3>Cogobos</h3>
+          <p> medida: 40x40 </p>
+          <a href="https://wa.me/598098125874?text=Hola, me interesan los Cogobos" target="_blank" class="consultar-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar precio
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 13 -->
+      <div class="producto-card" data-category="hormigon">
+        <div class="producto-imgs">
+          <div class="imgs-track">
+            <img src="https://i.postimg.cc/BQtRLrCc/adoquines-1.jpg" alt="Producto 13" />
+            <img src="https://i.postimg.cc/9Q7S1yKp/adoquines-2.jpg" alt="Producto 13 - img 2" />
+          </div>
+          <button class="img-nav prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="img-nav next"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="img-dots"></div>
+        </div>
+        <div class="producto-info">
+          <h3>Adoquines</h3>
+          <p> 8 de alto</p>
+          <p> 20 de alto</p>
+          <p> 39 por metro cuadrado</p>
+          <a href="https://wa.me/598098125874?text=Hola, me interesan los Adoquines" target="_blank" class="consultar-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar precio
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 14 -->
+      <div class="producto-card" data-category="estructura">
+        <div class="producto-imgs">
+          <div class="imgs-track">
+            <img src="https://i.postimg.cc/52L78bQr/caminero-imitacion-madera.jpg" alt="Producto 14" />
+          </div>
+          <button class="img-nav prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="img-nav next"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="img-dots"></div>
+        </div>
+        <div class="producto-info">
+          <h3>Caminero Imitación Madera</h3>
+          <p>Tamaño: 60 x 60.</p>
+          <a href="https://wa.me/598098125874?text=Hola, me interesa el caminero imitación Madera" target="_blank" class="consultar-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar precio
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 15 -->
+      <div class="producto-card" data-category="revestimiento">
+        <div class="producto-imgs">
+          <div class="imgs-track">
+            <img src="https://i.postimg.cc/7hJMDng2/revestimiento-chico.jpg" alt="Producto 15" />
+          </div>
+          <button class="img-nav prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="img-nav next"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="img-dots"></div>
+        </div>
+        <div class="producto-info">
+          <h3>Revestimiento Chico</h3>
+          <p>Tamaño: 50×14.</p>
+          <a href="https://wa.me/598098125874?text=Hola, me interesa el revestimiento Chico" target="_blank" class="consultar-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar precio
+          </a>
+        </div>
+      </div>
+
+            <!-- PRODUCTO 16 -->
+      <div class="producto-card" data-category="revestimiento">
+        <div class="producto-imgs">
+          <div class="imgs-track">
+            <img src="https://i.postimg.cc/85MM0zDn/pileta-para-patio.jpg" alt="Producto 15" />
+          </div>
+          <button class="img-nav prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="img-nav next"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="img-dots"></div>
+        </div>
+        <div class="producto-info">
+          <h3>Pileta para Patio</h3>
+          <p>Pileta de patio para tapa 20x20</p>
+          <a href="https://wa.me/598098125874?text=Hola, me interesa la Pileta para Patio" target="_blank" class="consultar-btn">
+            <i class="fa-brands fa-whatsapp"></i> Consultar precio
+          </a>
+        </div>
+      </div>
+
+
+    </div><!-- /productos-grid -->
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contacto" id="contacto">
+    <div class="contacto-inner">
+      <p class="catalogo-label">— Estamos para vos —</p>
+      <h2 class="catalogo-title">Contacto</h2>
+      <div class="contacto-grid">
+        <a href="https://www.instagram.com/lacasadelhormigon/" target="_blank" class="contacto-card ig">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Instagram</span>
+          <small>La Casa del Hormigón</small>
+        </a>
+        <a href="https://wa.me/598098125874" target="_blank" class="contacto-card wpp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp</span>
+          <small>098 125 874</small>
+        </a>
+        <a href="https://wa.me/598098179440" target="_blank" class="contacto-card wpp2">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp 2</span>
+          <small>098 179 440</small>
+        </a>
+        <a href="https://www.facebook.com/LaCasaDelHormigon" target="_blank" class="contacto-card fb">
+          <i class="fa-brands fa-facebook"></i>
+          <span>Facebook</span>
+          <small>La Casa Del Hormigón</small>
+        </a>
+        <a href="https://maps.app.goo.gl/fn6f3SA6zMGVYHXn8" target="_blank" class="contacto-card loc">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Ubicación</span>
+          <small>Ver en el mapa</small>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="https://i.postimg.cc/5ttSRQmD/logo-vallari.jpg" alt="Logo" />
+    </div>
+    <p></p>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/lacasadelhormigon/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://wa.me/598098125874" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://maps.app.goo.gl/fn6f3SA6zMGVYHXn8" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+    </div>
+  </footer>
+
+  <!-- BOTONES FLOTANTES -->
+  <div class="fab-container">
+    <a href="https://www.instagram.com/lacasadelhormigon/" target="_blank" class="fab ig" title="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://wa.me/598098125874" target="_blank" class="fab wpp" title="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="https://maps.app.goo.gl/fn6f3SA6zMGVYHXn8" target="_blank" class="fab loc" title="Ubicación">
+      <i class="fa-solid fa-location-dot"></i>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
